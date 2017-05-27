@@ -1,0 +1,261 @@
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  VARIABLES FILE
+*/
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  MIXINS FILE
+*/
+/* ========================================= */
+/* Bootstrap Elements Override */
+/* ========================================= */
+.btn.btn-primary {
+  background: #e80c0c !important;
+  border-color: #e80c0c !important;
+  color: #fff;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  -webkit-box-shadow: 6px 6px 0 0 #000000;
+  box-shadow: 6px 6px 0 0 #000000;
+  /*-webkit-box-shadow: none;
+          box-shadow: none;*/
+}
+.btn.btn-primary:hover {
+  background: #e80c0c !important;
+}
+
+/* ========================================= */
+/* Automotive Style */
+/* ========================================= */
+body {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anton", sans-serif;
+  color: #e80c0c;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.component__main-header {
+  position: relative;
+}
+.component__main-header:before {
+  content: "";
+  display: block;
+  padding-top: 30%;
+}
+.component__main-header .component__main-header-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.component__main-header .component__main-header-inner .component__main-header-text {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.component__main-header .component__main-header-inner .component__main-header-text .main-title {
+  font-size: 5em;
+  margin: 0 0 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.component__main-header .component__main-header-inner .component__main-header-text .main-title span {
+  color: #e80c0c;
+}
+.component__main-header .component__main-header-inner .component__main-header-text .main-subtitle {
+  font-size: 2em;
+  color: #fff;
+}
+.component__main-header .component__main-header-inner .component__main-header-text .main-cta .btn {
+  font-size: 2em;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.component__main-header.cover-background {
+  background-image: url("../img/stock-photo-black-matte-sports-car-with-grunge-overlay-d-illustration-529860217.jpg");
+}
+
+.component__main-products {
+  margin-top: 80px;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner {
+  background: #efefef;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-image img {
+  width: 100%;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-details {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Anton", sans-serif;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-details li {
+  display: inline-block;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-details li:first-child {
+  border-right: 1px solid #fff;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text {
+  padding: 20px 20px 40px 20px;
+  background: #efefef;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-title {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-desc {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-price {
+  margin-top: 40px;
+  position: relative;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-price .current-price {
+  font-size: 1.8em;
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+  color: #e80c0c;
+  margin-bottom: 10px;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-price .old-price {
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+  text-decoration: line-through;
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-price .discount {
+  position: absolute;
+  background: #e80c0c;
+  color: #fff;
+  top: -10px;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: 700;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.component__main-products .component__main-products-inner .component__main-products-item .component__main-products-item-inner .product-text .product-cta {
+  margin-top: 40px;
+}
+.component__main-products .component__main-products-inner .component__main-products-item.highlited {
+  position: relative;
+}
+.component__main-products .component__main-products-inner .component__main-products-item.highlited .component__main-products-item-inner .product-text {
+  background: #ccc;
+}
+.component__main-products .component__main-products-inner .component__main-products-item.highlited:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #e80c0c;
+  z-index: 1;
+  position: absolute;
+  top: -5px;
+  left: 17px;
+}
+
+.component__countdown {
+  margin: 80px 0 40px 0;
+}
+.component__countdown .component__countdown-inner h3 {
+  color: #ccc;
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+.component__countdown .component__countdown-inner .component__countdown-box {
+  *zoom: 1;
+  text-align: right;
+}
+.component__countdown .component__countdown-inner .component__countdown-box:before, .component__countdown .component__countdown-inner .component__countdown-box:after {
+  content: "";
+  display: table;
+}
+.component__countdown .component__countdown-inner .component__countdown-box:after {
+  clear: both;
+}
+.component__countdown .component__countdown-inner .component__countdown-box > div {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 700;
+  border: 5px solid #ccc;
+  line-height: 1em;
+  padding: 10px;
+  color: #ccc;
+}
+.component__countdown .component__countdown-inner .component__countdown-box .days:before {
+  content: "- ";
+}
+.component__countdown .component__countdown-inner .component__countdown-box .days:after {
+  content: "d";
+}
+.component__countdown .component__countdown-inner .component__countdown-box .hours:after,
+.component__countdown .component__countdown-inner .component__countdown-box .minutes:after {
+  content: ":";
+}
+
+.component__image-section {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style_automotive.css.map */

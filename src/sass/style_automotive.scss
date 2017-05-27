@@ -1,0 +1,253 @@
+@import '_variables';
+@import '_variables_automotive';
+@import '_mixins';
+
+
+/* ========================================= */
+/* Bootstrap Elements Override */
+/* ========================================= */
+
+.btn {
+    &.btn-primary {
+        background: $color-1!important;
+        border-color: $color-1!important;
+        color: $white;
+        @include transition(all,0.2s,ease);
+        -webkit-box-shadow: 6px 6px 0 0 #000000;
+                box-shadow: 6px 6px 0 0 #000000;
+        /*-webkit-box-shadow: none;
+                box-shadow: none;*/
+        &:hover {
+            background: $color-1_hover!important;
+        }
+    }
+}
+
+/* ========================================= */
+/* Automotive Style */
+/* ========================================= */
+
+body {
+    font-family: $font_custom_1;
+    padding-bottom: 100px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font_custom_2;
+    color: $color_1;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.component__main-header {
+    @include ratio_custom(30%);
+    .component__main-header-inner {
+        @include ratio-content;
+        .component__main-header-text {
+            position: absolute;
+            @include place(50%,0,auto,0);
+            @include translate-50Y;
+            .main-title {
+                font-size: 5em;
+                margin: 0 0 $margin/4 0;
+                color: $white;
+                text-transform: uppercase;
+                span {
+                    color: $color_1;
+                }
+            }
+            
+            .main-subtitle {
+                font-size: 2em;
+                color: $white;
+            }
+            
+            .main-cta {
+                
+                .btn {
+                    font-size: 2em;
+                    padding: 10px 20px; 
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+    }
+    &.cover-background {
+        background-image: url('../img/stock-photo-black-matte-sports-car-with-grunge-overlay-d-illustration-529860217.jpg');
+    }
+}
+
+
+.component__main-products {
+    margin-top: $margin*2;
+    .component__main-products-inner {
+        
+        .component__main-products-item {
+            .component__main-products-item-inner {
+                background: $gray-extra-light;
+                .product-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .product-details {
+                    @include resetlist;
+                    margin-top: $margin/4;
+                    font-size: 1.2em;
+                    font-weight: 700;
+                    font-family: $font_custom_2;
+                    li {
+                        display: inline-block;
+                        &:first-child {
+                            border-right: 1px solid $white;
+                            margin-right: $margin/4;
+                            padding-right: $margin/4;
+                        }
+                    }
+                }
+                .product-text {
+                    padding: $padding/2 $padding/2 $padding $padding/2;
+                    background: $gray-extra-light;
+                    .product-title {
+                        margin: 0;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                    }
+                    .product-desc {
+                        font-weight: 300;
+                        font-style: italic;
+                        margin-top: $margin/2;
+                        border-top: 1px solid $white;
+                        border-bottom: 1px solid $white;
+                        padding: $padding/2 0;
+                    }
+                    .product-price {
+                        margin-top: $margin;
+                        position: relative;
+                        
+                        .current-price {
+                            font-size: 1.8em;
+                            font-weight: 400;
+                            font-family: $font_custom_2;
+                            color: $color-1;
+                            margin-bottom: $margin/4;
+                        }
+                        
+                        .old-price {
+                            font-size: 1.3em;
+                            font-weight: 400;
+                            font-family: $font_custom_2;
+                            text-decoration: line-through;
+                        }
+                        
+                        .discount {
+                            position: absolute;
+                            background: $color-1;
+                            color: $white;
+                            top: -10px;
+                            right: 0;
+                            left: auto;
+                            bottom: auto;
+                            width: 70px;
+                            height: 70px;
+                            line-height: 70px;
+                            text-align: center;
+                            border-radius: 50%;
+                            font-size: 1.5em;
+                            font-weight: 700;
+                            -webkit-transform: rotate(-15deg);
+                                    transform: rotate(-15deg);
+                        }
+                    }
+                    .product-cta {
+                        margin-top: 40px;
+                    }
+                }
+            }
+            &.highlited {
+                position: relative;
+                
+                .component__main-products-item-inner {
+                    .product-text {
+                        background: $gray-light;
+                    }
+                }
+                &:before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-top: 50px solid $color-1; 
+                    z-index: 1;
+                    position: absolute;
+                    top: -5px;
+                    left: 17px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+
+.component__countdown {
+    margin: $margin*2 0 $margin 0;
+    .component__countdown-inner {
+        h3 {
+            color: $gray-light;
+            margin: 0 0 $margin/4 0;
+            font-size: 1.2em;
+            font-family: $font_custom_1;
+            text-align: right;
+        }
+        .component__countdown-box {
+            @include clearfix;
+            text-align: right;
+            > div {
+                display: inline-block;
+                font-size: 3em;
+                font-weight: 700;
+                border: 5px solid $gray-light;
+                line-height: 1em;
+                padding: $padding/4;
+                color: $gray-light;
+            }
+            .days {
+                //border: none;
+                &:before {
+                    content: "- ";
+                }
+                &:after {
+                    content: "d";
+                }
+            }
+            .hours,
+            .minutes {
+                &:after {
+                    content: ":";
+                }
+            }
+        }
+    }
+}
+
+.component__image-section {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    margin-top: $margin;
+}

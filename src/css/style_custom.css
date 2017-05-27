@@ -1,0 +1,170 @@
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  CUSTOM STYLE FILE
+*/
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  VARIABLES FILE
+*/
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  MIXINS FILE
+*/
+/* =========================================================== 
+    Place here you custom style. 
+    Here you can access to  all SASS variables and mixins.
+=========================================================== */
+/*  WARNING !!!!!!!!!!!
+    -------------------------
+    The following code is only a simple demo of boilerplate usage
+    and is used only to style the index.html file.
+    You can replace it with your own code. */
+body {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  background: #212121;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 40px;
+  margin-right: 10px;
+}
+nav ul li a {
+  display: block;
+  color: #367caf !important;
+}
+
+.form-control {
+  border-radius: 0;
+  height: 50px;
+  border-color: #efefef;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+
+.section-imgbackground {
+  padding: 80px 0;
+  background-color: #333;
+  background-image: url(../img/stock-photo-businessman-hand-working-with-new-modern-computer-and-business-strategy-as-concept-134150393.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid #367caf;
+  min-height: 500px;
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+}
+.section-imgbackground .section-imgbackground-over {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section-imgbackground h1, .section-imgbackground h2 {
+  font-weight: 700;
+  font-size: 7vw;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  margin: 0 0 40px 0;
+  color: #fff;
+}
+.section-imgbackground h1 small, .section-imgbackground h2 small {
+  font-weight: 300;
+  color: #367caf;
+  font-size: 0.3em;
+  line-height: 1em;
+  display: block;
+}
+.section-imgbackground a.btn {
+  color: #fff;
+  font-size: 1.8em;
+  border-radius: 30px;
+}
+@media all and (max-width: 1000px) {
+  .section-imgbackground a.btn {
+    font-size: 1.2em;
+  }
+}
+@media all and (max-width: 768px) {
+  .section-imgbackground a.btn {
+    font-size: 1em;
+  }
+}
+
+#conversions {
+  background-image: url(../img/stock-photo-businessman-hand-working-with-new-modern-computer-and-business-strategy-as-concept-287096177.jpg);
+}
+
+#team {
+  background-image: url(../img/stock-photo-business-people-corporate-discussion-meeting-team-concept-251497315.jpg);
+}
+
+#homebanking {
+  background-image: url(../img/stock-photo-closeup-of-couple-using-mobile-phone-413897188.jpg);
+}
+
+h2 {
+  color: #367caf;
+}
+
+code {
+  color: #999;
+}
+
+footer {
+  background: #367caf;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 40px 0;
+}
+
+.overview {
+  margin-bottom: 40px;
+}
+.overview .overview-list {
+  list-style-type: none;
+  font-size: 1.8em;
+}
+.overview .overview-list li {
+  margin-bottom: 10px;
+}
+.overview .overview-list li .glyphicon {
+  color: #367caf;
+}
+
+.big-quote {
+  color: #999;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style_custom.css.map */

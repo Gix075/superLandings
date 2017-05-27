@@ -1,0 +1,155 @@
+/*  
+ *  ***************************************************
+ *  SIMPLE.SASS
+ *  ***************************************************
+ *  Simple SASS Boilerplate based on HTML5 Boilerplate 
+ *  ***************************************************
+
+ *  CUSTOM STYLE FILE
+*/
+
+
+@import '_variables';
+@import '_mixins';
+
+
+/* =========================================================== 
+    Place here you custom style. 
+    Here you can access to  all SASS variables and mixins.
+=========================================================== */
+
+/*  WARNING !!!!!!!!!!!
+    -------------------------
+    The following code is only a simple demo of boilerplate usage
+    and is used only to style the index.html file.
+    You can replace it with your own code. */
+
+
+body {
+    font-family: $font_custom_2;
+}
+
+nav {
+    background: $black;
+    ul {
+        @include resetlist();
+        li {
+            display: inline-block;
+            line-height: $space;
+            margin-right: $space/4;
+            a {
+                display: block;
+                color: $color_2!important;
+            }
+        }
+    }
+}
+
+.form-control {
+    border-radius: 0;
+    height: 50px;
+    border-color: $gray_extra_light;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.header.header-big {}
+
+.section-imgbackground {
+    padding: $space*2 0;
+    background-color: $gray_extra_dark;
+    background-image: url(../img/stock-photo-businessman-hand-working-with-new-modern-computer-and-business-strategy-as-concept-134150393.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 5px solid $color_2;
+    min-height: 500px;
+    position: relative;
+    color: $white;
+    font-weight: 300;
+    .section-imgbackground-over {
+        position: absolute;
+        @include place(0,0,0,0);
+        background: rgba(0,0,0,0.5);
+    }
+    h1,h2 {
+        font-weight: 700;
+        font-size: 7vw;
+        text-transform: uppercase;
+        line-height: 0.8em;
+        margin: 0 0 $space 0;
+        color: $white;
+        small {
+            font-weight: 300;
+            color: $color_2;
+            font-size: 0.3em;
+            line-height: 1em;
+            display: block;
+        }
+    }
+    a.btn {
+        color: $white;
+        font-size: 1.8em;
+        border-radius: 30px;
+        
+        @media all and (max-width: 1000px) {
+            font-size: 1.2em;
+        }
+        
+        @media all and (max-width: 768px) {
+            font-size: 1em;
+        }
+    }
+}
+
+#conversions {
+    background-image: url(../img/stock-photo-businessman-hand-working-with-new-modern-computer-and-business-strategy-as-concept-287096177.jpg);
+}
+
+#team {
+    background-image: url(../img/stock-photo-business-people-corporate-discussion-meeting-team-concept-251497315.jpg);
+}
+
+#homebanking {
+    background-image: url(../img/stock-photo-closeup-of-couple-using-mobile-phone-413897188.jpg);
+}
+
+h2 {
+    color: $color_2;
+}
+
+code {
+    color: $gray_middle;
+}
+
+footer {
+    background: $color-2;
+    color: $white;
+    font-size: 0.8em;
+    padding: $space 0;
+}
+
+.overview {
+    margin-bottom: $space;
+    .overview-list {
+        list-style-type: none;
+        font-size: 1.8em;
+        li {
+            margin-bottom: $space/4;
+            .glyphicon {
+                color: $color-2;
+            }
+        }
+    }
+}
+
+.big-quote {
+    color: $gray-middle;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
